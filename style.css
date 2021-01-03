@@ -1,0 +1,109 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.wrapper{
+    display: flex;
+}
+
+h1{
+    padding: 20px 30px;
+    font-size: 1.5em;
+}
+
+
+.intro{
+    padding: 20px 0;
+    font-size: 2em;
+    color: #000;
+}
+
+.documentation{
+    font-family: sans-serif;
+    color: grey;
+}
+
+.documentation section{
+    margin-top: 20px;
+}
+
+.documentation h2{
+    color: #000;
+    margin-bottom: 20px;
+}
+
+.documentation ul{
+    margin-left: 100px;
+}
+
+.documentation ul li{
+    line-height: 20px;
+    margin-bottom: 10px;
+    font-size: 15px;
+}
+
+.documentation p{
+    line-height: 20px;
+    margin-bottom: 20px;
+    font-size: 15px;
+}
+
+.sidebar{
+    flex-basis: 25%;
+    margin-right: 50px;
+    overflow: scroll;
+    height: 600px;
+}
+
+.sidebar ul li{
+    border-top: 1px solid grey;
+    border-bottom: 1px solid grey;
+    padding: 15px 10px;
+}
+
+.sidebar ul li a{
+    color: grey;
+    text-decoration: none;
+    font-size: 16px;
+    display: block;
+}
+
+.documentation{
+    flex-basis: 70%;
+}
+
+.documentation ul ul{
+    margin-left: 50px;
+}
+
+.demo{
+    background-color: lightgrey;
+    padding: 10px 0 10px 30px;
+    color: grey;
+    font-size: 12px !important;
+    margin-left: 20px;
+}
+
+.reference ul{
+    margin-left: 0px !important;
+}
+
+@media (max-width: 768px) {
+    .wrapper{
+        flex-wrap: wrap;
+    }
+
+    .documentation{
+        padding: 40px;
+    }
+
+    .sidebar{
+        flex-basis: 100%;
+    }
+
+    .documentation{
+        flex-basis: 100%;
+    }
+}
